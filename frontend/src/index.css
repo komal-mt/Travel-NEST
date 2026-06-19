@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+  background: #020617;
+  color: white;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* PREMIUM GLASS */
+.glass {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(14px);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
+}
+
+/* BUTTONS */
+.btn-primary {
+  background: linear-gradient(to right, #f97316, #fb923c);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 14px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(249, 115, 22, 0.5);
+}
+
+.btn-secondary {
+  background: rgba(255,255,255,0.1);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* CARD */
+.card {
+  background: #0f172a;
+  border-radius: 24px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* SECTION */
+.section-title {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.section-subtitle {
+  color: #94a3b8;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* TEXT GRADIENT */
+.text-gradient {
+  background: linear-gradient(to right, #f97316, #facc15);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* BADGE */
+.badge {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f97316;
+  border-radius: 20px;
+}
+
+/* INPUT */
+.input {
+  width: 100%;
+  background: white;
+  color: black;
+  border: 1px solid #cbd5e1;
+  padding: 12px 16px;
+  border-radius: 14px;
+  outline: none;
+  font-size: 15px;
+}
+
+.input::placeholder {
+  color: #94a3b8;
+}
+
+.input:focus {
+  border-color: #f97316;
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.3);
+}
